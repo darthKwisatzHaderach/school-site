@@ -7,7 +7,98 @@ html lang="en"
     title Bootstrap 101 Template
     link href="css/bootstrap.min.css" rel="stylesheet"
   body
-    h1 Hello, world!
+
+    nav.navbar.navbar-default role="navigation"
+      .container-fluid
+        /! Brand and toggle get grouped for better mobile display
+        .navbar-header
+          button.navbar-toggle data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand href="#"  Brand
+        /! Collect the nav links, forms, and other content for toggling
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li.active
+              a href="#"  Link
+            li
+              a href="#"  Link
+            li.dropdown
+              a.dropdown-toggle data-toggle="dropdown" href="#"
+                | Dropdown
+                span.caret
+              ul.dropdown-menu role="menu"
+                li
+                  a href="#"  Action
+                li
+                  a href="#"  Another action
+                li
+                  a href="#"  Something else here
+                li.divider
+                li
+                  a href="#"  Separated link
+                li.divider
+                li
+                  a href="#"  One more separated link
+          form.navbar-form.navbar-left role="search"
+            .form-group
+              input.form-control placeholder="Search" type="text"
+            button.btn.btn-default type="submit"  Submit
+          ul.nav.navbar-nav.navbar-right
+            li
+              a href="#"  Link
+            li.dropdown
+              a.dropdown-toggle data-toggle="dropdown" href="#"
+                | Dropdown
+                span.caret
+              ul.dropdown-menu role="menu"
+                li
+                  a href="#"  Action
+                li
+                  a href="#"  Another action
+                li
+                  a href="#"  Something else here
+                li.divider
+                li
+                  a href="#"  Separated link
+
+    div.container
+      div.row
+        div.col-lg-3
+          h1.my-4 Shop Name
+          div.list-group
+            a.list-group-item.active href="#" Category 1
+            a.list-group-item href="#" Category 2
+            a.list-group-item href="#" Category 3
+
+        div.col-lg-9
+          div.card.mt-4
+            img.card-img-top.img-fluid src="http://placehold.it/900x400" alt=""
+            div.card-body
+              h3.card-title Product Name
+              h4 $24.99
+              p.card-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dicta fugit fugiat hic aliquam itaque facere, soluta. Totam id dolores, sint aperiam sequi pariatur praesentium animi perspiciatis molestias iure, ducimus!
+              span.text-warning 4.0 stars
+
+          div.card.card-outline-secondary.my-4
+            div.card-header Product Reviews
+            div.card-body
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.
+              small.text-muted Posted by Anonymous on 3/1/17
+              hr
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.
+              small.text-muted Posted by Anonymous on 3/1/17
+              hr
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.
+              small.text-muted Posted by Anonymous on 3/1/17
+              hr
+              a.btn.btn-success href="#" Leave a Review
+
+    footer.py-5bg-dark
+      div.container
+        p.m-0.text-center.text-white Copyright &copy; Your Website 2017
 
     script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"
     script src="js/bootstrap.min.js"
