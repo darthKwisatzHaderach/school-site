@@ -1,0 +1,52 @@
+doctype html
+html lang="en"
+  head
+    meta charset="utf-8"
+    meta http-equiv="X-UA-Compatible" content="IE=edge"
+    meta name="viewport" content="width=device-width, initial-scale=1"
+    title МКОУ "Голубковская СОШ имени С.Устинова"
+    link href="css/bootstrap.min.css" rel="stylesheet"
+  body
+    nav.navbar.navbar-default role="navigation"
+      div.container
+        div.row
+          div.navbar-header
+            button.navbar-toggle data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand href="#" МКОУ "Голубковская СОШ имени С.Устинова"
+          div.collapse.navbar-collapse id="bs-example-navbar-collapse-1"
+            span.col-lg-4
+            ul.nav.navbar-nav
+              li
+                a href="#" Версия для слабовидящих
+              li
+                a href="#" Контакты
+
+    div.container
+      div.row
+        div.col-lg-3
+          h4.my-4 Главное меню
+          div.list-group
+            a.list-group-item.active href="#" Главная
+            a.list-group-item href="#" Сведения об образовательной организации
+            a.list-group-item href="#" Методическая работа
+            a.list-group-item href="#" Государственная итоговая аттестация
+            a.list-group-item href="#" Воспитание и социализация
+            a.list-group-item href="#" Наш профсоюз
+            a.list-group-item href="#" Антикоррупционная деятельность
+            a.list-group-item href="#" Школьная медиация
+            a.list-group-item href="#" Развитие материальной базы
+            a.list-group-item href="#" Фото
+
+        div.col-lg-9
+          == yield
+
+    footer.py-5bg-dark
+      div.container
+        p.m-0.text-center.text-white &copy; МКОУ "Голубковская СОШ имени С.Устинова" 2017
+
+    script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+    script src="js/bootstrap.min.js"
