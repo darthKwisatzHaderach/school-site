@@ -30,14 +30,14 @@ html lang="en"
         div.col-lg-3
           h4.my-4 Главное меню
           div.list-group
-            a.list-group-item.active href="#" Главная
+            a.list-group-item href="/" Главная
             a.list-group-item href="#" Сведения об образовательной организации
             a.list-group-item href="#" Методическая работа
             a.list-group-item href="#" Государственная итоговая аттестация
             a.list-group-item href="#" Воспитание и социализация
             a.list-group-item href="#" Наш профсоюз
             a.list-group-item href="#" Антикоррупционная деятельность
-            a.list-group-item href="#" Школьная медиация
+            a.list-group-item href="/school-mediation" Школьная медиация
             a.list-group-item href="#" Развитие материальной базы
             a.list-group-item href="#" Фото
 
@@ -50,3 +50,5 @@ html lang="en"
 
     script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"
     script src="js/bootstrap.min.js"
+    script
+      |$('a[href="' + this.location.pathname + '"]').addClass('active');
