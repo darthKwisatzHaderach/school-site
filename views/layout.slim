@@ -7,9 +7,11 @@ html lang="en"
     title МКОУ "Голубковская СОШ имени С.Устинова"
     link href="css/bootstrap.min.css" rel="stylesheet"
     css:
-      .table > tbody > tr > td {
-        vertical-align: middle !important;
-      }
+      .table > tbody > tr > td { vertical-align: middle !important; }
+      .panel {margin-bottom: 5px !important;}
+      .panel-body { padding: 0px; }
+      .panel-body table tr td { padding-left: 15px }
+      .panel-body .table { margin-bottom: 0px; }
   body
     nav.navbar.navbar-default role="navigation"
       div.container
@@ -32,18 +34,103 @@ html lang="en"
     div.container
       div.row
         div.col-lg-3
-          h4.my-4 Главное меню
           div.list-group
-            a.list-group-item href="/" Главная
-            a.list-group-item href="#" Сведения об образовательной организации
-            a.list-group-item href="#" Методическая работа
-            a.list-group-item href="#" Государственная итоговая аттестация
-            a.list-group-item href="#" Воспитание и социализация
-            a.list-group-item href="#" Наш профсоюз
-            a.list-group-item href="/anti-corruption-activity" Антикоррупционная деятельность
-            a.list-group-item href="/school-mediation" Школьная медиация
-            a.list-group-item href="/material-base-development" Развитие материальной базы
-            a.list-group-item href="#" Фото
+            div.panel.panel-default
+              div.panel-heading
+                h4.panel-title
+                  a href="/" Главная
+            div.panel.panel-default
+              div.panel-heading
+                h4.panel-title
+                  a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" Сведения об образовательной организации
+              div.panel-collapse.collapse id="collapseOne" role="tabpanel" aria-labelledby="headingOne"
+                div.panel.panel-body
+                  table.table
+                    tr
+                      td
+                        a href="#" Основные сведения
+                div.panel.panel-body
+                  table.table
+                    tr
+                      td
+                        a href="#" Структура и органы управления
+                div.panel.panel-body
+                  table.table
+                    tr
+                      td
+                        a href="#" Документы
+                div.panel.panel-body
+                  table.table
+                    tr
+                      td
+                        a href="#" Образование
+                div.panel.panel-body
+                  table.table
+                    tr
+                      td
+                        a href="#" Образовательные стандарты
+                div.panel.panel-body
+                  table.table
+                    tr
+                      td
+                        a href="#" Материально-техническое обеспечение образовательного процесса
+                div.panel.panel-body
+                  table.table
+                    tr
+                      td
+                        a href="#" Руководство и педадогический состав
+                div.panel.panel-body
+                  table.table
+                    tr
+                      td
+                        a href="#" Стипендии и иные виды материальной поддержки
+                div.panel.panel-body
+                  table.table
+                    tr
+                      td
+                        a href="#" Платные образовательные услуги
+                div.panel.panel-body
+                  table.table
+                    tr
+                      td
+                        a href="#" Финансово-хозяйственная деятельность
+                div.panel.panel-body
+                  table.table
+                    tr
+                      td
+                        a href="#" Вакантные места для приема (перевода)
+            div.panel.panel-default
+              div.panel-heading
+                h4.panel-title
+                  a href="#" Методическая работа
+            div.panel.panel-default
+              div.panel-heading
+                h4.panel-title
+                  a href="#" Государственная итоговая аттестация
+            div.panel.panel-default
+              div.panel-heading
+                h4.panel-title
+                  a href="#" Воспитание и социализация
+            div.panel.panel-default
+              div.panel-heading
+                h4.panel-title
+                  a href="#" Наш профсоюз
+            div.panel.panel-default
+              div.panel-heading
+                h4.panel-title
+                  a href="/anti-corruption-activity" Антикоррупционная деятельность
+            div.panel.panel-default
+              div.panel-heading
+                h4.panel-title
+                  a href="/school-mediation" Школьная медиация
+            div.panel.panel-default
+              div.panel-heading
+                h4.panel-title
+                  a href="/material-base-development" Развитие материальной базы
+            div.panel.panel-default
+              div.panel-heading
+                h4.panel-title
+                  a href="#" Фото
 
         div.col-lg-9
           == yield
