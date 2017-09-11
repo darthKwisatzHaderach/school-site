@@ -1,1 +1,21 @@
-= @files
+h3 Школьная медиация
+
+table.table.table-condensed.table-hover
+  - @pdf_files.each do |file|
+    tr
+      td
+        img src="#{@@pdf_icon}"
+      td
+        a target="_blank" href="#{@dir}/#{file}" = file.split('.').first
+  - @doc_files.each do |file|
+    tr
+      td
+        img src="#{@@doc_icon}"
+      td
+        a target="_blank" href="#{@dir}/#{file}" = file.split('.').first
+  - @zip_files.each do |file|
+    tr
+      td
+        img src="#{@@zip_icon}"
+      td
+        a target="_blank" href="#{@dir}/#{file}" = file.split('.').first
