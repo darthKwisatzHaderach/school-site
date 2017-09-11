@@ -22,3 +22,12 @@ get '/school-mediation' do
   @zip_files = Dir.chdir(basedir) { Dir.glob("*.*z*") }
   slim :school_mediation
 end
+
+get '/anti-corruption-activity' do
+  basedir = "./public/files/anti-corruption-activity"
+  @dir = "files/anti-corruption-activity"
+  @pdf_files = Dir.chdir(basedir) { Dir.glob("*.pdf") }
+  @doc_files = Dir.chdir(basedir) { Dir.glob("*.doc*") }
+  @zip_files = Dir.chdir(basedir) { Dir.glob("*.*z*") }
+  slim :anti_corruption_activity
+end
