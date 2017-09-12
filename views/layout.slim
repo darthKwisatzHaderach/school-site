@@ -90,7 +90,31 @@ html lang="en"
             div.panel.panel-default
               div.panel-heading
                 h4.panel-title
-                  a href="#" Воспитание и социализация
+                  a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" Воспитание и социализация
+              div.panel-collapse.collapse id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo"
+                div.panel.panel-body
+                  table.table
+                    tr
+                      td
+                        a href="#" Стратегия развития воспитания
+                    tr
+                      td
+                        a href="#" Патриотическое воспитание
+                    tr
+                      td
+                        a href="#" Культура здорового и безопасного образа жизни
+                    tr
+                      td
+                        a href="#" Трудовое воспитание
+                    tr
+                      td
+                        a href="#" Культурно-эстетическое воспитание
+                    tr
+                      td
+                        a href="#" Cпортивно-оздоровительное воспитание
+                    tr
+                      td
+                        a href="#" Волонтерское движение
             div.panel.panel-default
               div.panel-heading
                 h4.panel-title
@@ -111,6 +135,10 @@ html lang="en"
               div.panel-heading
                 h4.panel-title
                   a href="#" Фото
+
+          div align="center"
+            a href="http://www.gosuslugi.ru/"
+              img src="files/common/gosuslugi.gif"
 
         div.col-lg-9
           == yield
