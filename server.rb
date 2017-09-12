@@ -40,3 +40,7 @@ get '/material-base-development' do
   @zip_files = Dir.chdir(basedir) { Dir.glob("*.*z*") }
   slim :material_base_development
 end
+
+get '/labor-union' do
+  slim :labor_union
+end
