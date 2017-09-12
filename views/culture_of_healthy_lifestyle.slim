@@ -1,0 +1,27 @@
+h4 Культура здорового и безопасного образа жизни
+br
+table.table.table-condensed.table-hover
+  - @pdf_files.each do |file|
+    tr
+      td
+        img src="#{@@pdf_icon}"
+      td
+        a target="_blank" href="#{@dir}/#{file}" = file.sub(/\.[^.]+\z/, '')
+  - @doc_files.each do |file|
+    tr
+      td
+        img src="#{@@doc_icon}"
+      td
+        a target="_blank" href="#{@dir}/#{file}" = file.sub(/\.[^.]+\z/, '')
+  - @zip_files.each do |file|
+    tr
+      td
+        img src="#{@@zip_icon}"
+      td
+        a target="_blank" href="#{@dir}/#{file}" = file.sub(/\.[^.]+\z/, '')
+  - @html_files.each do |file|
+    tr
+      td
+        img src="#{@@html_icon}"
+      td
+        a target="_blank" href="#{@dir}/#{file}" = file.sub(/\.[^.]+\z/, '')
